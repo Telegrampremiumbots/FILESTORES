@@ -37,7 +37,7 @@ FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
+START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\n 𝗧𝗛𝗜𝗦 𝗕𝗢𝗧 𝗜𝗦 𝗢𝗪𝗡𝗘𝗗 𝗕𝗬 𝗦𝗥𝗠_𝗧𝗘𝗟𝗘_𝗠𝗜𝗫\n\n 𝗠𝗔𝗜𝗡𝗧𝗔𝗜𝗡𝗘𝗗 𝗕𝗬 @SK_VIJAY")
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "5606394891").split()):
@@ -58,7 +58,7 @@ PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "True") == "True" el
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
-USER_REPLY_TEXT = "❌Don't send me messages directly I'm only File Share bot!"
+USER_REPLY_TEXT = "𝗕𝗛𝗔𝗜 𝗜 𝗔𝗠 𝗢𝗡𝗟𝗬 𝗔 𝗕𝗢𝗧 𝗝𝗢𝗜𝗡 @SRMkMiX 𝗝𝗢𝗜𝗡 𝗔𝗡𝗗 𝗪𝗔𝗧𝗖𝗛 𝗞𝗗𝗥𝗔𝗠𝗔𝗦"
 
 ADMINS.append(OWNER_ID)
 ADMINS.append(1250450587)
