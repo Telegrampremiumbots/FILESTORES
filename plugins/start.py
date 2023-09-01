@@ -55,19 +55,34 @@ async def start_command(client: Client, message: Message):
                 ids = [int(int(argument[1]) / abs(client.db_channel.id))]
             except:
                 return
-        prv = await message.reply_text("[■□□□□□□□□□] 10%")
+        prv = await message.reply_text("█▒▒▒▒▒▒▒▒▒")
         await asyncio.sleep(0.9)
-        await prv.bot.edit_message_text(chat_id=chat_id, message_id=message_id, text="New message text")
-        await asyncio.sleep(0.9)
+        await prv.delete()
         try:
             messages = await get_messages(client, ids)
         except:
             await message.reply_text("Something went wrong..!")
             return
         await prv.delete()
-        prv1 = await message.reply_text("mc")
+        prv1 = await message.reply_text("███▒▒▒▒▒▒▒")
         await asyncio.sleep(1)
         await prv1.delete()
+        prv2 = await message.reply_text("█████▒▒▒▒▒")
+        await asyncio.sleep(1)
+        await prv2.delete()
+        prv3 = await message.reply_text("███████▒▒▒")
+        await asyncio.sleep(1)
+        await prv3.delete()
+        prv4 = await message.reply_text("██████████")
+        await asyncio.sleep(1)
+        await prv4.delete()
+        prv5 = await message.reply_text("𝐍𝐨𝐰 𝐥𝐨𝐚𝐝𝐢𝐧𝐠...")
+        await asyncio.sleep(1)
+        await prv5.delete()
+        prv6 = await message.reply_text("⋘ 𝑃𝑙𝑒𝑎𝑠𝑒 𝑤𝑎𝑖𝑡...⋙")
+        await asyncio.sleep(1)
+        await prv6.delete()
+        
 
         for msg in messages:
 
