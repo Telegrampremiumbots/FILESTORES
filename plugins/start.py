@@ -5,6 +5,7 @@
 
 import os
 import asyncio
+import random 
 from pyrogram import Client, filters, __version__
 from pyrogram.enums import ParseMode
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
@@ -15,7 +16,14 @@ from config import ADMINS, FORCE_MSG, START_MSG, CUSTOM_CAPTION, DISABLE_CHANNEL
 from helper_func import subscribed, encode, decode, get_messages
 from database.database import add_user, del_user, full_userbase, present_user
 
-
+PICS = (
+"https://telegra.ph/file/d36099195663d17c9adf7.jpg",
+"https://telegra.ph/file/d98e061e141ecfd4ae11b.jpg",
+"https://telegra.ph/file/b03b3e3bd413648252633.jpg",
+"https://telegra.ph/file/ed3a7036f3b236c2969dd.jpg",
+"https://telegra.ph/file/3124d9abcd1926d7ef4c4.jpg",
+)
+    
 
 
 @Bot.on_message(filters.command('start') & filters.private & subscribed)
@@ -117,7 +125,7 @@ async def start_command(client: Client, message: Message):
             ]
         )
         await message.reply_photo(
-            photo= "https://telegra.ph/file/dbfa0403b8d00aa2f2f65.jpg",
+            photo = random.choice(PICS),
             caption= START_MSG.format(
                 first = message.from_user.first_name,
                 last = message.from_user.last_name,
