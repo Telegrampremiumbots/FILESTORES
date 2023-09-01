@@ -55,13 +55,14 @@ async def start_command(client: Client, message: Message):
                 ids = [int(int(argument[1]) / abs(client.db_channel.id))]
             except:
                 return
-        temp_msg = await message.reply("Please wait...")
+        prv = await message.reply_text("testing")
+        await asyncio.sleep(1)
         try:
             messages = await get_messages(client, ids)
         except:
             await message.reply_text("Something went wrong..!")
             return
-        await temp_msg.delete()
+        await prv.delete()
 
         for msg in messages:
 
