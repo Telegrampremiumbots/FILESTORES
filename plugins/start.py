@@ -57,7 +57,7 @@ async def start_command(client: Client, message: Message):
                 return
         prv = await message.reply_text("[■□□□□□□□□□] 10%")
         await asyncio.sleep(0.9)
-        prv = await message.edit("[■■□□□□□□□□] 20%")
+        await prv.bot.edit_message_text(chat_id=chat_id, message_id=message_id, text="New message text")
         await asyncio.sleep(0.9)
         try:
             messages = await get_messages(client, ids)
