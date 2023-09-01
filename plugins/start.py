@@ -63,6 +63,9 @@ async def start_command(client: Client, message: Message):
             await message.reply_text("Something went wrong..!")
             return
         await prv.delete()
+        prv1 = await message.reply_text("mc")
+        await asyncio.sleep(1)
+        await prv1.delete()
 
         for msg in messages:
 
