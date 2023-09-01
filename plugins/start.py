@@ -55,8 +55,10 @@ async def start_command(client: Client, message: Message):
                 ids = [int(int(argument[1]) / abs(client.db_channel.id))]
             except:
                 return
-        prv = await message.reply_text("testing")
-        await asyncio.sleep(1)
+        prv = await message.reply_text("[■□□□□□□□□□] 10%")
+        await asyncio.sleep(0.9)
+        await message.edit("[■■□□□□□□□□] 20%")
+        await asyncio.sleep(0.9)
         try:
             messages = await get_messages(client, ids)
         except:
