@@ -64,7 +64,7 @@ async def start_command(client: Client, message: Message):
             except:
                 return
         prv = await message.reply_text("█▒▒▒▒▒▒▒▒▒")
-        await asyncio.sleep(0.9)
+        await asyncio.sleep(0.3)
         await prv.delete()
         try:
             messages = await get_messages(client, ids)
@@ -73,25 +73,25 @@ async def start_command(client: Client, message: Message):
             return
         await prv.delete()
         prv1 = await message.reply_text("███▒▒▒▒▒▒▒")
-        await asyncio.sleep(0.9)
+        await asyncio.sleep(0.2)
         await prv1.delete()
         prv2 = await message.reply_text("█████▒▒▒▒▒")
-        await asyncio.sleep(0.9)
+        await asyncio.sleep(0.2)
         await prv2.delete()
         prv3 = await message.reply_text("███████▒▒▒")
-        await asyncio.sleep(0.9)
+        await asyncio.sleep(0.2)
         await prv3.delete()
         prv4 = await message.reply_text("██████████")
-        await asyncio.sleep(0.9)
+        await asyncio.sleep(0.2)
         await prv4.delete()
         prv5 = await message.reply_text("𝐍𝐨𝐰 𝐥𝐨𝐚𝐝𝐢𝐧𝐠...")
-        await asyncio.sleep(0.9)
+        await asyncio.sleep(0.2)
         await prv5.delete()
         prv7 = await message.reply_text("𝐒𝐞𝐚𝐫𝐜𝐡𝐢𝐧𝐠 𝐈𝐧 𝐃𝐚𝐭𝐚𝐁𝐚𝐬𝐞!! 😇")
-        await asyncio.sleep(0.9)
+        await asyncio.sleep(0.2)
         await prv7.delete()
         prv6 = await message.reply_text("𝐏𝐥𝐞𝐚𝐬𝐞 𝐖𝐚𝐢𝐭....")
-        await asyncio.sleep(0.9)
+        await asyncio.sleep(0.2)
         await prv6.delete()
         
 
