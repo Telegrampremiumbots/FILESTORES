@@ -63,8 +63,8 @@ async def start_command(client: Client, message: Message):
                 ids = [int(int(argument[1]) / abs(client.db_channel.id))]
             except:
                 return
-        prv = await message.reply_text("█▒▒▒▒▒▒▒▒▒")
-        await asyncio.sleep(0.3)
+        prv = await message.reply_text("[■□□□□□□□□□] 10%")
+        await asyncio.sleep(0.2)
         await prv.delete()
         try:
             messages = await get_messages(client, ids)
@@ -72,16 +72,16 @@ async def start_command(client: Client, message: Message):
             await message.reply_text("Something went wrong..!")
             return
         await prv.delete()
-        prv1 = await message.reply_text("███▒▒▒▒▒▒▒")
+        prv1 = await message.reply_text("[■■■□□□□□□□] 30%")
         await asyncio.sleep(0.2)
         await prv1.delete()
-        prv2 = await message.reply_text("█████▒▒▒▒▒")
+        prv2 = await message.reply_text("[■■■■□□□□□□] 40%")
         await asyncio.sleep(0.2)
         await prv2.delete()
-        prv3 = await message.reply_text("███████▒▒▒")
+        prv3 = await message.reply_text("[■■■■■■□□□□] 60%")
         await asyncio.sleep(0.2)
         await prv3.delete()
-        prv4 = await message.reply_text("██████████")
+        prv4 = await message.reply_text("[■■■■■■■■■□] 90%")
         await asyncio.sleep(0.2)
         await prv4.delete()
         prv5 = await message.reply_text("𝐍𝐨𝐰 𝐥𝐨𝐚𝐝𝐢𝐧𝐠...")
