@@ -64,7 +64,7 @@ async def start_command(client: Client, message: Message):
             except:
                 return
         prv = await message.reply_text("[■□□□□□□□□□] 10%")
-        await asyncio.sleep(0.2)
+        await asyncio.sleep(0.1)
         await prv.delete()
         try:
             messages = await get_messages(client, ids)
